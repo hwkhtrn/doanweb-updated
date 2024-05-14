@@ -25,13 +25,20 @@
     position: absolute;
     width: 120.44px;
     height: 120.44px;
-    bottom: 10px;
+    bottom: 0px;
     left: 60px;
+    display: flex;
+    align-items: center;
   }
   
-  .header-img {
-    width: 140.44px;
-    height: 140.44px;
+  .header-logo img:first-child {
+    width: 100%;
+    height:fit-content;
+  }
+
+  .header-logo img:last-child {
+    width: 100%;
+    height:fit-content;
   }
   
   .header-menu {
@@ -1050,10 +1057,35 @@
   .movie-info--option:active span {
     transform: translateY(1px);
   }
+
+  .swiper-wrapper.a {
+    margin-bottom: 50px;
+  }
+
+  .swiper-button-prev.a {
+    margin-left: -12px;
+  }
+
+  .swiper-button-next.a {
+    margin-right: -12px;
+  }
   
   #swiper-button {
     color: #4a4848;
   }
+
+  #swiper-btn {
+    color: white;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #deabab !important; 
+  }
+
+  .swiper-pagination {
+    padding-top: 40px;
+  }
+
   .swiper-button-prev:hover {
     transform: translateX(-1px);
     cursor: pointer;
@@ -2702,7 +2734,7 @@
   /* Footer */
   .footer-1 {
     position: relative;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding-top: 50px;
     height: 260px;
     border-top: 3px solid #807070;
@@ -2716,13 +2748,26 @@
   .footer-logo {
     /* position: absolute; */
     width: 120.44px;
-    height: 120.44px;
+    height: 132.44px;
     left: 61px;
   }
-  
-  .footer-img {
-    width: 120.44px;
-    height: 120.44px;
+
+  .footer-logo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-logo div img:first-child{
+    width: 100%;
+    height: fit-content;
+  }
+
+  .footer-logo div img:last-child{
+    width: 100%;
+    height: fit-content;
   }
   
   .footer-content-1 {
