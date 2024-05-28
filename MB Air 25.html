@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="/le cinéma/assets/css/responsive.css">
   <link rel="stylesheet" href="/le cinéma/assets/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -80,18 +83,6 @@
     </div>
 
     <div class="grid wide">
-        <div class="path">
-          <a href="" class="path-home">Home</a>
-
-          >
-
-          <a href="" class="path-coming-soon">Coming soon</a>
-
-          >
-
-          <a href="" class="path-coming-soon">Exhuma</a>
-        </div>
-
         <div class="movie-info-24 col l-12 m-12 c-12">
           <div class="row2 sm-gutter">
             <div class="movie-info--content-24 col l-4 m-4 c-6">
@@ -111,12 +102,13 @@
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="movie-info--svg-24">
                     <path d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
                   </svg>
-                  Category: Mystery, Horror, Thriller</p>
+                  Category: <span id="movie-cat">Mystery, Horror, Thriller</span>
+                </p>
                 <p>                  
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="movie-info--svg-24">
                     <path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
                   </svg>
-                  Length: 2h 14m
+                  Length: <span id="movie-length">2h 14m</span>
                 </p>
                 <p>                  
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="movie-info--svg-24">
@@ -128,21 +120,22 @@
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="movie-info--svg-24">
                     <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/>
                   </svg>
-                  Premiere on: 15/03/2024
-
+                  Premiere on: 08/02/2024
                 </p>
                 <p>                    
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="movie-info--svg-24">
                     <path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM625 177L497 305c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L591 143c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/>
                   </svg>
-                  15: Suitable for audiences 15 years old and above
+                  PG-13: Suitable for audiences 13 years old and above
                 </p>
               </div>
 
               <div class="movie-info--desc-24">
                 <h2>INFORMATION</h2>
-                <p>Director: Jang Jae-hyun</p>
-                <p>Starring: Choi Min-sik, Kim Go-eun, Yoo Hai-jin, Lee Do-hyun</p>
+                <p>Director: <span id="movie-director">Jang Jae-hyun</span>
+                </p>
+                <p>Starring: <span id="movie-actor">Choi Min-sik, Kim Go-eun, Yoo Hai-jin, Lee Do-hyun</span>
+                </p>
               </div>
               
               <div class="movie-info--desc-24">
