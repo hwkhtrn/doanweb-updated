@@ -75,10 +75,10 @@ html{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #c39696; 
+    background: #ffba13; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #9f7a7a; 
+    background: rgba(144, 16, 16); 
   }
