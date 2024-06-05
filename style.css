@@ -117,8 +117,8 @@
   /* Header Search BTN */
   .header-search {
     position: absolute;
-    top: 10px;
-    left: 50%;
+    top: 60%;
+    left: 75%;
   }
 
   .header-search--input {
@@ -126,11 +126,17 @@
   }
 
   #header-search {
-    width: 400px;
+    width: 300px;
     height: 3rem;
     padding-left: 16px;
     border: none;
     border-radius: 20px;
+    background-color: #c41e1e;
+    color: white;
+  }
+
+  #header-search::placeholder {
+    color: white;
   }
 
   #header-search:focus {
@@ -149,9 +155,11 @@
     height: 32px;
     border: none;
     border-radius: 20px;
-    background-color: #d9d9d9;
+    background-color: transparent;
     padding: 8px;
     z-index: 2;
+    transition: 0.2s ease;
+    fill: white;
   }
 
   .header-search--svg:hover {
@@ -160,7 +168,7 @@
   }
 
   .header-search--svg:active {
-    transform: translateX(1px);
+    transform: translateY(1px);
   }
 
   .header-search-history {
